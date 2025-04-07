@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨hamza animation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header with Nav -->
+  <header id="hero">
+    <nav class="navbar glass">
+      <h1 class="logo">✨Hamza animations</h1>
+      <ul class="nav-links">
+        <li><a href="#products">Editors</a></li>
+        <li><a href="#contact">Find Me</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">🌓</button>
+    </nav>
+
+    <div class="hero-content">
+      <h2 class="glow-text">✨Hamza Nakib Animation</h2>
+      <p>The best animation editors in one place.</p>
+      <br><br>
+      <a href="#products" class="glow-btn">more animation editors</a>
+    </div>
+  </header>
+
+  <section id="products" class="fade-in">
+    <h2>Animation editors</h2>
+    <div id="product-container" class="product-list"></div>
+  </section>
+
+  <section id="contact" class="section products-section">
+    <h2 class="section-title">Find Me</h2>
+    <div>
+      <ul class="find-grid">
+        <li class="find-card">
+            <a href="https://hamza-123n.github.io/hamza.io/" target="_blank">Main website (hamza.io)</a>
+        </li>
+        <li class="find-card">
+            <a href="https://github.com/Hamza-123N" target="_blank">My Github</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content glass">
+      <span id="close-modal">&times;</span>
+      <img id="modal-img" src="" alt="Product Image" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <br>
+      <h4 id="modal-price"></h4>
+      <button onclick="scrollToContact()" class="glow-btn">Download</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
